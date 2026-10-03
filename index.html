@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
+      line-height: 1.65;
       margin: 0;
-      padding: 0;
       color: #222;
       background-color: #ffffff;
     }
@@ -28,13 +28,15 @@
 
     h1 {
       text-align: center;
+      color: #003B5C;
       margin-bottom: 25px;
     }
 
     h2 {
       color: #003B5C;
       border-bottom: 2px solid #003B5C;
-      padding-bottom: 5px;
+      padding-bottom: 6px;
+      margin-top: 25px;
     }
 
     h3 {
@@ -50,12 +52,12 @@
       text-decoration: underline;
     }
 
-    /* Image row */
+    /* Main images */
     .row {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       margin-bottom: 30px;
     }
 
@@ -69,14 +71,14 @@
       height: auto;
     }
 
-    .profile-photo {
-      width: 70%;
-      max-width: 300px;
-    }
-
     .ucla-logo {
       width: 70%;
       max-width: 250px;
+    }
+
+    .profile-photo {
+      width: 70%;
+      max-width: 300px;
     }
 
     .locean-logo {
@@ -84,12 +86,12 @@
       max-width: 220px;
     }
 
-    /* Tabs */
+    /* Navigation tabs */
     .tab {
       overflow: hidden;
       border: 1px solid #ccc;
       background-color: #f1f1f1;
-      margin-top: 25px;
+      margin-top: 30px;
     }
 
     .tab button {
@@ -118,19 +120,22 @@
       border-top: none;
     }
 
-    .publication {
-      margin-bottom: 18px;
-    }
-
+    /* Research boxes */
     .research-box {
       background-color: #f7f9fa;
       border-left: 4px solid #003B5C;
       padding: 12px 18px;
-      margin: 15px 0;
+      margin: 18px 0;
     }
 
+    /* Publications */
+    .publication {
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
     .footer-images {
-      margin-top: 35px;
+      margin-top: 40px;
     }
 
     .footer-images .column img {
@@ -139,6 +144,7 @@
     }
 
     @media screen and (max-width: 700px) {
+
       .row {
         flex-direction: column;
       }
@@ -156,11 +162,14 @@
   </style>
 </head>
 
+
 <body>
 
 <div class="container">
 
+  <!-- Header -->
   <h1>Anh Le-Duy Pham, Ph.D.</h1>
+
 
   <!-- Main images -->
   <div class="row">
@@ -173,7 +182,7 @@
 
     <div class="column">
       <img src="anhlpham.jpg"
-           alt="Anh Pham"
+           alt="Anh Le-Duy Pham"
            class="profile-photo">
     </div>
 
@@ -185,93 +194,115 @@
 
   </div>
 
+
   <!-- Introduction -->
   <h2>Welcome</h2>
 
   <p>
-    My name is Anh Le-Duy Pham. I am an ocean biogeochemistry modeler interested
-    in understanding the mechanisms that regulate ocean biogeochemical cycles,
-    marine ecosystem dynamics, and their responses to environmental and climate
-    change.
-  </p>
-
-  <p>
-    My research focuses primarily on the ocean iron (Fe) cycle and its connections
-    to marine ecosystems and the carbon cycle. I combine numerical modeling,
-    observational datasets, and large-scale model intercomparison to investigate
-    how physical circulation, chemical processes, and biological interactions
-    regulate the distribution and fate of iron in the ocean.
-  </p>
-
-  <p>
-    I received my Bachelor's degree in Marine Engineering from Hanoi University
-    of Science in 2013 and my Ph.D. in Oceanography from the School of Earth and
-    Atmospheric Sciences at the Georgia Institute of Technology in 2019.
-  </p>
-
-  <p>
-    I am currently a researcher in the Department of Atmospheric and Oceanic
-    Sciences at the University of California, Los Angeles (UCLA), where I work
-    with Daniele Bianchi and collaborators on ocean biogeochemistry and ecosystem
+    I am a chemical oceanographer and marine biogeochemist specializing in
+    ocean trace-metal cycling, aquatic chemical processes, and biogeochemical
     modeling.
   </p>
 
   <p>
-    Before joining UCLA, I was a postdoctoral researcher at LOCEAN and ISPL at
-    Sorbonne University in Paris, France.
+    My research combines observations, numerical models, and data synthesis
+    to investigate how redox reactions, organic ligands, sedimentary inputs,
+    particle dynamics, and ocean circulation regulate the distribution and
+    biological availability of iron and other nutrients.
+  </p>
+
+  <p>
+    I develop and apply regional and global ocean biogeochemical models to
+    connect chemical processes with marine ecosystems, carbon cycling, and
+    climate change.
+  </p>
+
+  <p>
+    I received my Ph.D. in Oceanography from the School of Earth &
+    Atmospheric Sciences at Georgia Institute of Technology in 2019 and my
+    B.S. in Marine Engineering from Hanoi University of Science in 2013.
+  </p>
+
+  <p>
+    I am currently a Postdoctoral Scholar in the Department of Atmospheric
+    and Oceanic Sciences at the University of California, Los Angeles (UCLA).
+    Before joining UCLA, I was a Postdoctoral Associate at the Laboratoire
+    d'Océanographie et du Climat (LOCEAN) at Sorbonne University in Paris.
   </p>
 
 
   <!-- Research highlights -->
-  <h2>Research Highlights</h2>
+  <h2>Research</h2>
 
   <div class="research-box">
-    <strong>Iron cycling along continental margins</strong><br>
-    I investigate how benthic, riverine, atmospheric, and biological sources of
-    iron interact with scavenging, precipitation, ligand stabilization, and
-    physical circulation to control the transport of iron from continental
-    margins to the open ocean.
-  </div>
 
-  <div class="research-box">
-    <strong>California Current System and the U.S. West Coast</strong><br>
-    My current regional research focuses on the California Current System,
-    including the distribution and cycling of dissolved iron and organic ligands,
-    shelf-to-basin transport, and the interaction between small-scale ocean
-    circulation and biogeochemical processes.
-  </div>
+    <strong>Iron Biogeochemistry</strong>
 
-  <div class="research-box">
-    <strong>Iron and marine ecosystems</strong><br>
-    I am extending ocean iron-cycle modeling toward marine food webs, including
-    the effects of iron availability on phytoplankton, heterotrophic bacteria,
-    zooplankton, and higher trophic levels such as fish.
-  </div>
+    <p>
+      I investigate the processes controlling the marine iron cycle,
+      including redox chemistry, organic ligand binding, scavenging,
+      sedimentary iron inputs, particle dynamics, and biological uptake.
+    </p>
 
-  <div class="research-box">
-    <strong>Global ocean iron models and observations</strong><br>
-    I am evaluating dissolved iron distributions in CMIP6 and other ocean
-    biogeochemical models against the GEOTRACES observational compilation,
-    with the goal of identifying strengths and limitations of current
-    representations of the marine iron cycle.
-  </div>
-
-  <div class="research-box">
-    <strong>Carbon cycle and engineered marine ecosystems</strong><br>
-    I am also developing biogeochemical modeling approaches to investigate the
-    transport and ecosystem impacts of polyhydroxybutyrate (PHB) released by
-    engineered Sargassum, including potential consequences for marine food webs
-    and the ocean carbon cycle.
   </div>
 
 
-  <!-- Tabs -->
+  <div class="research-box">
+
+    <strong>California Current System</strong>
+
+    <p>
+      My research at UCLA focuses on the California Current System and the
+      eastern Pacific Ocean. I combine observations and high-resolution
+      numerical modeling to investigate the transport and cycling of iron
+      along continental margins and its connections to ocean ecosystems.
+    </p>
+
+  </div>
+
+
+  <div class="research-box">
+
+    <strong>Iron and Marine Ecosystems</strong>
+
+    <p>
+      I study interactions between iron and marine organisms, including
+      heterotrophic bacteria and zooplankton, and investigate how iron
+      availability and recycling influence marine food webs and ecosystem
+      dynamics.
+    </p>
+
+  </div>
+
+
+  <div class="research-box">
+
+    <strong>Ocean Models and Observations</strong>
+
+    <p>
+      I use regional and global ocean biogeochemical models together with
+      observational datasets and model intercomparison to understand
+      processes controlling ocean biogeochemistry.
+    </p>
+
+  </div>
+
+
+  <div class="research-box">
+
+    <strong>Marine Carbon Cycling</strong>
+
+    <p>
+      I am interested in the interactions between trace-metal cycling,
+      marine carbon cycling, benthic-pelagic coupling, and climate-change
+      feedbacks.
+    </p>
+
+  </div>
+
+
+  <!-- Navigation -->
   <div class="tab">
-
-    <button class="tablinks"
-            onclick="openCity(event, 'Research')">
-      Research
-    </button>
 
     <button class="tablinks"
             onclick="openCity(event, 'Publications')">
@@ -279,12 +310,22 @@
     </button>
 
     <button class="tablinks"
-            onclick="openCity(event, 'Talks')">
-      Talks & Teaching
+            onclick="openCity(event, 'ResearchProjects')">
+      Research Projects
     </button>
 
     <button class="tablinks"
-            onclick="openCity(event, 'Others')">
+            onclick="openCity(event, 'Teaching')">
+      Teaching & Mentoring
+    </button>
+
+    <button class="tablinks"
+            onclick="openCity(event, 'Talks')">
+      Talks
+    </button>
+
+    <button class="tablinks"
+            onclick="openCity(event, 'CV')">
       CV & Links
     </button>
 
@@ -296,241 +337,497 @@
   </div>
 
 
-  <!-- Research tab -->
-  <div id="Research" class="tabcontent">
-
-    <h2>Research</h2>
-
-    <p>
-      During my Ph.D., I used ocean biogeochemical models to investigate the
-      mechanisms controlling the distribution and cycling of dissolved iron
-      across the global ocean. My work examined the roles of biological uptake,
-      organic ligand binding, scavenging, remineralization, and external iron
-      sources.
-    </p>
-
-    <p>
-      During my postdoctoral research at LOCEAN and Sorbonne University, I
-      expanded this work to investigate interactions between iron and marine
-      organisms, particularly heterotrophic bacteria and zooplankton. This work
-      explored how biological iron demand can influence iron recycling and
-      broader ocean biogeochemical cycles.
-    </p>
-
-    <p>
-      At UCLA, my research focuses increasingly on the California Current System
-      and the broader eastern Pacific Ocean. I combine high-resolution ocean
-      circulation and biogeochemical modeling with observations to understand
-      how mesoscale and submesoscale circulation influences iron transport and
-      ecosystem dynamics.
-    </p>
-
-    <p>
-      Current research directions include:
-    </p>
-
-    <ul>
-      <li>Iron transport from continental margins to the open ocean</li>
-      <li>Iron and organic ligand cycling in the California Current System</li>
-      <li>Iron limitation of phytoplankton and heterotrophic bacteria</li>
-      <li>Iron recycling by zooplankton and implications for marine food webs</li>
-      <li>Iron controls on fish and higher trophic levels</li>
-      <li>Evaluation of CMIP6 ocean iron models using GEOTRACES observations</li>
-      <li>High-resolution ROMS-MARBL modeling of the California Current System</li>
-      <li>Biogeochemical consequences of engineered Sargassum and PHB production</li>
-    </ul>
-
-  </div>
-
-
   <!-- Publications -->
   <div id="Publications" class="tabcontent">
 
     <h2>Publications</h2>
 
-    <h3>Recent manuscripts and preprints</h3>
+    <h3>2026</h3>
 
     <div class="publication">
+
       <strong>
-        Pham, A., Floback, A., Evans, N., Till, C., Till, R., Moffett, J.,
-        Barbeau, K., & Bianchi, D.
+        Floback, A. E., Pham, A. L.-D., Damien, P., Odendahl, C. E.,
+        Weiske, J., Thomas, K. E., Gaffney, J., John, S. G.,
+        Bianchi, D., & Moffett, J. W. (2026).
       </strong>
+
+      Iron supply from the Oregon margin to the ocean dominated by
+      hypoxia-dependent particles.
+
+      <em>Proceedings of the National Academy of Sciences, 123(18),
+      e2532929123.</em>
+
+      <br>
+
+      <a href="https://doi.org/10.1073/pnas.2532929123"
+         target="_blank">
+        DOI
+      </a>
+
+    </div>
+
+
+    <div class="publication">
+
+      <strong>
+        Pham, A. L.-D., Floback, A., Evans, N., Till, C., Till, R.,
+        Moffett, J. W., Barbeau, K., & Bianchi, D. (2026).
+      </strong>
+
       Exploring iron processes in the California Current System through a
       regional dataset of dissolved iron and organic ligands measurements.
-      <em>EGUsphere</em>, 2026.
+
+      <em>EGUsphere [preprint], egusphere-2026-4502.</em>
+
       <br>
-      <a href="https://doi.org/10.5194/egusphere-2026-4502">
-        https://doi.org/10.5194/egusphere-2026-4502
+
+      <a href="https://doi.org/10.5194/egusphere-2026-4502"
+         target="_blank">
+        DOI / Preprint
       </a>
-    </div>
 
-    <div class="publication">
-      <strong>Pham, A., Mar, M., & Bianchi, D.</strong>
-      A data compilation of dissolved iron and ligand measurements along the
-      West Coast of the United States.
-      <em>In preparation.</em>
-    </div>
-
-    <div class="publication">
-      <strong>Pham, A. & Aumont, O.</strong>
-      Zooplankton demand modulates iron recycling and trophic interactions.
-      <em>In preparation.</em>
-    </div>
-
-    <div class="publication">
-      <strong>Pham, A. & Ito, T.</strong>
-      Biological processes control the ocean Fe distribution.
-      <em>In preparation.</em>
     </div>
 
 
-    <h3>Published papers</h3>
+    <h3>2025</h3>
 
     <div class="publication">
+
+      <strong>
+        Li, D., Ruan, X., Pham, A. L.-D., Damien, P., & Bianchi, D. (2025).
+      </strong>
+
+      Role of eddies in primary production in the California Current System.
+
+      <em>Geophysical Research Letters, 52, e2025GL118614.</em>
+
+      <br>
+
+      <a href="https://doi.org/10.1029/2025GL118614"
+         target="_blank">
+        DOI
+      </a>
+
+    </div>
+
+
+    <div class="publication">
+
+      <strong>
+        Schultz, C., Luo, J. Y., Brady, D. C., et al., including Pham, A.
+        (2025).
+      </strong>
+
+      Elucidating the role of marine benthic carbon in a changing world.
+
+      <em>Global Biogeochemical Cycles, 39, e2025GB008643.</em>
+
+      <br>
+
+      <a href="https://doi.org/10.1029/2025GB008643"
+         target="_blank">
+        DOI
+      </a>
+
+    </div>
+
+
+    <h3>2024</h3>
+
+    <div class="publication">
+
       <strong>
         Pham, A. L.-D., Damien, P., McCoy, D., Mar, M., Kessouri, F.,
         McWilliams, J. C., et al. (2024).
       </strong>
+
       The shelf-to-basin transport of iron from the northern U.S. West Coast
       to the Pacific Ocean.
-      <em>Global Biogeochemical Cycles, 38</em>,
-      e2023GB008029.
+
+      <em>Global Biogeochemical Cycles, 38, e2023GB008029.</em>
+
       <br>
-      <a href="https://doi.org/10.1029/2023GB008029">
-        https://doi.org/10.1029/2023GB008029
+
+      <a href="https://doi.org/10.1029/2023GB008029"
+         target="_blank">
+        DOI
       </a>
+
     </div>
 
+
     <div class="publication">
+
       <strong>
         Robinson, D., Pham, A. L.-D., Yousavich, D. J., Janssen, F.,
-        Wenzhöfer, F., Arrington, E. C., Gosselin, K. M., Sandoval-Belmar, M.,
-        Mar, M., Valentine, D. L., Bianchi, D., & Treude, T.
+        Wenzhöfer, F., et al. (2024).
       </strong>
-      Iron “Ore” Nothing: Benthic iron fluxes from the oxygen-deficient
-      Santa Barbara Basin enhance phytoplankton productivity in surface waters.
-      <em>Biogeosciences.</em>
+
+      Iron “ore” nothing: benthic iron fluxes from the oxygen-deficient
+      Santa Barbara Basin enhance phytoplankton productivity in surface
+      waters.
+
+      <em>Biogeosciences, 21, 773–788.</em>
+
       <br>
-      <a href="https://doi.org/10.5194/bg-2022-237">
-        https://doi.org/10.5194/bg-2022-237
+
+      <a href="https://doi.org/10.5194/bg-21-773-2024"
+         target="_blank">
+        DOI
       </a>
+
     </div>
 
+
     <div class="publication">
+
+      <strong>
+        Buesseler, K. O., Bianchi, D., Chai, F., et al., including Pham, A.
+        (2024).
+      </strong>
+
+      Next steps for assessing ocean iron fertilization for marine carbon
+      dioxide removal.
+
+      <em>Frontiers in Climate, 6, 1430957.</em>
+
+      <br>
+
+      <a href="https://doi.org/10.3389/fclim.2024.1430957"
+         target="_blank">
+        DOI
+      </a>
+
+    </div>
+
+
+    <h3>Earlier Publications</h3>
+
+    <div class="publication">
+
       <strong>
         Pham, A. L.-D., Aumont, O., Ratnarajah, L., & Tagliabue, A. (2022).
       </strong>
+
       Examining the interaction between free-living bacteria and iron in the
       global ocean.
-      <em>Global Biogeochemical Cycles, 36</em>,
-      e2021GB007194.
+
+      <em>Global Biogeochemical Cycles, 36, e2021GB007194.</em>
+
       <br>
-      <a href="https://doi.org/10.1029/2021GB007194">
-        https://doi.org/10.1029/2021GB007194
+
+      <a href="https://doi.org/10.1029/2021GB007194"
+         target="_blank">
+        DOI
       </a>
+
     </div>
 
+
     <div class="publication">
+
       <strong>
-        Pham, A. & Ito, T. (2021).
+        Pham, A. L.-D., & Ito, T. (2021).
       </strong>
+
       Anthropogenic iron deposition alters the ecosystem and carbon balance
       of the Indian Ocean over a centennial timescale.
+
       <em>Journal of Geophysical Research: Oceans.</em>
+
       <br>
-      <a href="https://doi.org/10.1029/2020JC016475">
-        https://doi.org/10.1029/2020JC016475
+
+      <a href="https://doi.org/10.1029/2020JC016475"
+         target="_blank">
+        DOI
       </a>
+
     </div>
 
+
     <div class="publication">
+
       <strong>
-        Pham, A. & Ito, T. (2019).
+        Pham, A. L.-D., & Ito, T. (2019).
       </strong>
+
       Ligand binding strength explains the distribution of iron in the
       North Atlantic Ocean.
+
       <em>Geophysical Research Letters, 46.</em>
+
       <br>
-      <a href="https://doi.org/10.1029/2019GL083319">
-        https://doi.org/10.1029/2019GL083319
+
+      <a href="https://doi.org/10.1029/2019GL083319"
+         target="_blank">
+        DOI
       </a>
+
     </div>
 
-    <div class="publication">
-      <strong>
-        Toan, D. V., Doan, Q. V., Le Duy Anh, P., & Dinh, V. N. (2019).
-      </strong>
-      The zoning of offshore wind energy resources in the Vietnam Sea.
-      In <em>Proceedings of the 1st Vietnam Symposium on Advances in
-      Offshore Engineering</em>.
-      <br>
-      <a href="https://doi.org/10.1007/978-981-13-2306-5_34">
-        https://doi.org/10.1007/978-981-13-2306-5_34
-      </a>
-    </div>
 
     <div class="publication">
+
       <strong>
-        Pham, A. & Ito, T. (2018).
+        Pham, A. L.-D., & Ito, T. (2018).
       </strong>
+
       Formation and maintenance of the GEOTRACES subsurface dissolved iron
       maxima in an ocean biogeochemistry model.
+
       <em>Global Biogeochemical Cycles, 32.</em>
+
       <br>
-      <a href="https://doi.org/10.1029/2017GB005852">
-        https://doi.org/10.1029/2017GB005852
+
+      <a href="https://doi.org/10.1029/2017GB005852"
+         target="_blank">
+        DOI
       </a>
+
+    </div>
+
+
+    <h3>Manuscript in Preparation</h3>
+
+    <div class="publication">
+
+      <strong>
+        Pham, A. L.-D., & Aumont, O.
+      </strong>
+
+      Zooplankton demand modulates iron recycling and trophic interactions.
+
+      <em>Manuscript in preparation for Biogeosciences.</em>
+
     </div>
 
   </div>
 
 
-  <!-- Talks and teaching -->
+  <!-- Research projects -->
+  <div id="ResearchProjects" class="tabcontent">
+
+    <h2>Research Projects</h2>
+
+    <h3>Iron Cycling along Continental Margins</h3>
+
+    <p>
+      My research investigates how sedimentary inputs, particle dynamics,
+      redox chemistry, organic ligands, and ocean circulation regulate the
+      transport of iron from continental margins to the open ocean.
+    </p>
+
+
+    <h3>California Current System</h3>
+
+    <p>
+      I combine regional ocean modeling and observations to investigate
+      physical and biogeochemical processes controlling iron distributions
+      along the U.S. West Coast and their implications for marine ecosystems.
+    </p>
+
+
+    <h3>Iron and Marine Food Webs</h3>
+
+    <p>
+      I am investigating how iron availability and recycling influence
+      heterotrophic bacteria, zooplankton, phytoplankton, and higher trophic
+      levels.
+    </p>
+
+
+    <h3>Global Iron Model Evaluation</h3>
+
+    <p>
+      I evaluate ocean biogeochemical models using observations and
+      large-scale data synthesis, including comparisons between model
+      simulations and GEOTRACES observations.
+    </p>
+
+
+    <h3>Research Funding</h3>
+
+    <p>
+      <strong>NSF OCE-2343357 (2024–2027)</strong><br>
+      “Iron Protection, Removal, and Transport along Anoxic Margins and
+      Impacts on the Open Ocean.”
+    </p>
+
+    <p>
+      <strong>Pending NSF Collaborative Research</strong><br>
+      “Factors controlling iron distribution on the Southern Oregon shelf.”
+      Co-Principal Investigator with Daniele Bianchi, James Moffett,
+      and Kristen Buck.
+    </p>
+
+  </div>
+
+
+  <!-- Teaching and mentoring -->
+  <div id="Teaching" class="tabcontent">
+
+    <h2>Teaching & Mentoring</h2>
+
+    <h3>Teaching</h3>
+
+    <p>
+      <strong>Physics and Chemistry of the Oceans</strong><br>
+      Lecturer, proctoring, and grading for approximately 20 advanced
+      undergraduate and graduate students.
+    </p>
+
+    <p>
+      <strong>Introduction to Environmental Sciences</strong><br>
+      Lecturer, proctoring, and grading for approximately 50 students.
+    </p>
+
+
+    <h3>Student Mentoring</h3>
+
+    <ul>
+
+      <li>
+        <strong>Cassidy Allen</strong> — UCLA Undergraduate Researcher,
+        2025–present. Exploring the coastal ocean iron cycle through a
+        global data compilation.
+      </li>
+
+      <li>
+        <strong>Matthew Mar</strong> — UCLA Undergraduate Researcher,
+        2022–2024. Iron cycle along the California Current.
+      </li>
+
+      <li>
+        <strong>De’Marcus Robinson</strong> — UCLA Ph.D. Student,
+        2021–2024. Ocean biogeochemical cycles in oxygen minimum zones
+        in the Santa Barbara Basin.
+      </li>
+
+      <li>
+        <strong>Philippe Cherabier</strong> — Ph.D. Student,
+        Institut de Biologie de l’École Normale Supérieure,
+        2020–2023. Integrating microbial evolutionary processes in
+        general circulation models.
+      </li>
+
+      <li>
+        <strong>Ashanti Holt</strong> — Georgia Institute of Technology
+        Undergraduate Researcher, 2018. Dissolved oxygen trends in
+        U.S. coastal waters.
+      </li>
+
+    </ul>
+
+
+    <h3>Teaching Material</h3>
+
+    <p>
+      <strong>Introduction to Ocean Biogeochemical Modeling</strong>
+    </p>
+
+    <p>
+      A short instructional video introducing model thinking and philosophy
+      with a focus on ocean biogeochemical dynamics.
+    </p>
+
+    <p>
+      <a href="https://www.youtube.com/watch?v=qOw7xrfKilI"
+         target="_blank">
+        Watch on YouTube
+      </a>
+    </p>
+
+  </div>
+
+
+  <!-- Talks -->
   <div id="Talks" class="tabcontent">
 
-    <h2>Talks & Teaching</h2>
+    <h2>Selected Talks & Presentations</h2>
 
     <p>
-      <strong>Fate and transport of large iron fluxes from benthic sediments
-      along the eastern Pacific coasts to the open ocean</strong>
+      <strong>2025 — Goldschmidt Conference</strong><br>
+      Processes controlling the shelf-to-basin transport of particulate and
+      dissolved iron in the Pacific Ocean. Oral presentation.
+    </p>
+
+    <p>
+      <strong>2024 — Deep Ocean Observing Annual Meeting</strong><br>
+      Fate and transport of large iron fluxes from benthic sediments along
+      the eastern Pacific coasts to the open ocean. Oral presentation.
+    </p>
+
+    <p>
+      <strong>2023 — Goldschmidt Conference</strong><br>
+      The shelf-to-basin transport of iron from the northern U.S. West Coast
+      to the Pacific Ocean. Poster.
+    </p>
+
+    <p>
+      <strong>2022 — Institute for Marine and Antarctic Studies,
+      University of Tasmania</strong><br>
+      Evaluating biological and physical drivers of ocean iron cycling.
+      Invited seminar.
+    </p>
+
+    <p>
+      <strong>2022 — University of Vienna</strong><br>
+      The microbial control on the ocean cycling of trace metals under the
+      current and changing climate. Invited seminar.
+    </p>
+
+    <p>
+      <strong>2021 — Goldschmidt Conference</strong><br>
+      Examining the interaction between free-living bacteria and iron in
+      the global ocean. Oral presentation.
+    </p>
+
+    <h3>Additional Videos</h3>
+
+    <p>
+      <strong>
+        Fate and transport of large iron fluxes from benthic sediments
+        along the eastern Pacific coasts to the open ocean
+      </strong>
       <br>
-      <a href="https://youtu.be/74gY_lKpI1k">
-        YouTube
+      <a href="https://youtu.be/74gY_lKpI1k"
+         target="_blank">
+        Watch on YouTube
       </a>
     </p>
 
     <p>
-      <strong>Biological processes control the ocean iron distribution</strong>
+      <strong>
+        Biological processes control the ocean iron distribution
+      </strong>
       <br>
-      <a href="https://www.youtube.com/watch?v=ir6a6j44MqU&t=1007s">
-        YouTube
+      <a href="https://www.youtube.com/watch?v=ir6a6j44MqU&t=1007s"
+         target="_blank">
+        Watch on YouTube
       </a>
     </p>
 
     <p>
-      <strong>The interaction of heterotrophic bacteria and iron in the global
-      ocean</strong>
+      <strong>
+        The interaction of heterotrophic bacteria and iron in the global ocean
+      </strong>
       <br>
-      <a href="https://youtu.be/4VMJ8SkQwuc">
-        YouTube
+      <a href="https://youtu.be/4VMJ8SkQwuc"
+         target="_blank">
+        Watch on YouTube
       </a>
     </p>
 
     <p>
-      <strong>Zooplankton demand modulates iron recycling flux and microbial
-      iron consumption in the ocean</strong>
+      <strong>
+        Zooplankton demand modulates iron recycling flux and microbial iron
+        consumption in the ocean
+      </strong>
       <br>
-      <a href="https://www.youtube.com/watch?v=QJt0ZY8IA1M">
-        YouTube
-      </a>
-    </p>
-
-    <p>
-      <strong>Teaching sample: Introduction to Ocean Biogeochemical
-      Modeling</strong>
-      <br>
-      <a href="https://www.youtube.com/watch?v=qOw7xrfKilI">
-        YouTube
+      <a href="https://www.youtube.com/watch?v=QJt0ZY8IA1M"
+         target="_blank">
+        Watch on YouTube
       </a>
     </p>
 
@@ -538,51 +835,87 @@
 
 
   <!-- CV and links -->
-  <div id="Others" class="tabcontent">
+  <div id="CV" class="tabcontent">
 
     <h2>CV & Professional Links</h2>
 
     <p>
-      <a href="https://scholar.google.com/citations?user=NO54Z2EAAAAJ&hl=en">
+      <strong>Curriculum Vitae</strong>
+      <br>
+      <a href="Anh_Le-Duy_Pham_CV_2026.pdf"
+         target="_blank">
+        Download my CV (September 2026)
+      </a>
+    </p>
+
+    <p>
+      <strong>Google Scholar</strong>
+      <br>
+      <a href="https://scholar.google.com/citations?user=NO54Z2EAAAAJ&hl=en"
+         target="_blank">
         Google Scholar
       </a>
     </p>
 
     <p>
-      <a href="https://orcid.org/0000-0002-6857-9827">
+      <strong>ORCID</strong>
+      <br>
+      <a href="https://orcid.org/0000-0002-6857-9827"
+         target="_blank">
         ORCID
       </a>
     </p>
 
     <p>
-      <a href="https://www.researchgate.net/profile/Anh-Pham-94">
+      <strong>ResearchGate</strong>
+      <br>
+      <a href="https://www.researchgate.net/profile/Anh-Pham-94"
+         target="_blank">
         ResearchGate
       </a>
     </p>
 
     <p>
-      <a href="https://www.linkedin.com/in/anh-le-duy-pham-327193242/">
+      <strong>LinkedIn</strong>
+      <br>
+      <a href="https://www.linkedin.com/in/anh-le-duy-pham-327193242/"
+         target="_blank">
         LinkedIn
       </a>
     </p>
 
-    <p>
-      <a href="https://twitter.com/AnhPhamGT">
-        Twitter / X
-      </a>
-    </p>
+    <h3>Professional Service</h3>
 
-    <p>
-      <strong>CV:</strong>
-      <a href="https://www.dropbox.com/scl/fi/5t5zo9rktnvf1mxi34qww/Anh-LD-Pham_CV_2024.pdf?rlkey=pi7hqdwmjzxkyctv3z4u3eve7&st=4vjsws1b&dl=0">
-        Download my CV
-      </a>
-    </p>
+    <ul>
 
-    <p>
-      Outside of research, I enjoy visiting museums and reading fiction and
-      philosophy in Vietnamese, English, and French.
-    </p>
+      <li>
+        Member, GEOTRACES Early Career Scientist Committee
+        (2023–present)
+      </li>
+
+      <li>
+        Session Convener, Ocean Sciences Meeting (2024)
+      </li>
+
+      <li>
+        Session Convener, Goldschmidt Conference (2023)
+      </li>
+
+      <li>
+        Moderator Crew, EarthArXiv preprint repository (2021–present)
+      </li>
+
+      <li>
+        Reviewer for journals including
+        <em>Biogeosciences</em>,
+        <em>Biogeochemistry</em>,
+        <em>Geoscientific Model Development</em>,
+        <em>Environmental Science & Technology</em>,
+        <em>Journal of Geophysical Research: Oceans</em>, and
+        <em>Global Biogeochemical Cycles</em>.
+      </li>
+
+    </ul>
 
   </div>
 
@@ -593,8 +926,9 @@
     <h2>Contact</h2>
 
     <p>
-      Department of Atmospheric and Oceanic Sciences<br>
-      University of California, Los Angeles
+      <strong>Department of Atmospheric and Oceanic Sciences</strong><br>
+      University of California, Los Angeles<br>
+      Los Angeles, CA 90095
     </p>
 
     <p>
@@ -610,11 +944,13 @@
   <div class="row footer-images">
 
     <div class="column">
-      <img src="GT.jpg" alt="Georgia Institute of Technology">
+      <img src="GT.jpg"
+           alt="Georgia Institute of Technology">
     </div>
 
     <div class="column">
-      <img src="HUS.jpg" alt="Hanoi University of Science">
+      <img src="HUS.jpg"
+           alt="Hanoi University of Science">
     </div>
 
   </div>
@@ -623,19 +959,22 @@
 
 
 <script>
+
 function openCity(evt, cityName) {
 
   var i;
   var tabcontent;
   var tablinks;
 
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent =
+    document.getElementsByClassName("tabcontent");
 
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks =
+    document.getElementsByClassName("tablinks");
 
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className =
@@ -648,8 +987,9 @@ function openCity(evt, cityName) {
 }
 
 
-/* Open Research tab by default */
+/* Open Publications tab by default */
 document.getElementsByClassName("tablinks")[0].click();
+
 </script>
 
 </body>
