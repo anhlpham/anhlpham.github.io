@@ -1,0 +1,1 @@
+Keep these files together in your GitHub Pages repository. Also place anhlpham.jpg, UCLA_logo.png, LOCEAN.jpg, GT.jpg, HUS.jpg, and Anh_Le-Duy_Pham_CV_2026.pdf in the same folder.
